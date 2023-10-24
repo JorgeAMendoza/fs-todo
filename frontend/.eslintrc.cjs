@@ -6,7 +6,7 @@ module.exports = {
   extends: ['eslint:recommended', 'prettier'],
   overrides: [
     {
-      files: ['*.ts'],
+      files: ['src/**/*.ts'],
       parserOptions: {
         project: ['./tsconfig.json'],
         tsconfigRootDir: __dirname,
