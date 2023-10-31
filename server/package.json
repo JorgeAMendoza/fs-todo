@@ -3,6 +3,12 @@
   "version": "0.0.0",
   "description": "Server side for the fs-todo application",
   "main": "index.js",
+  "lint-staged": {
+    "*.ts": [
+      "eslint --cache --fix",
+      "prettier --write"
+    ]
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx tsc",
