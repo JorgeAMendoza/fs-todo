@@ -4,6 +4,8 @@
     "lint-staged": "^15.0.2"
   },
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "docker:start:dev": "docker-compose -f server/docker-compose.dev.yml up",
+    "docker:down:dev": "docker-compose -f server/docker-compose.dev.yml down"
   }
 }

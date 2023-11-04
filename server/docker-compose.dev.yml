@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  db-postgres:
+    image: postgres:14
+    container_name: db-postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: pg
+      POSTGRES_USER: postgres
