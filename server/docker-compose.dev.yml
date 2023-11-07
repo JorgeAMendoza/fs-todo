@@ -9,3 +9,5 @@ services:
     environment:
       POSTGRES_PASSWORD: pg
       POSTGRES_USER: postgres
+    volumes:
+      - ./dataset:/docker-entrypoint-initdb.d
